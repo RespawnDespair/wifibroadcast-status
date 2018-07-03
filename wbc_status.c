@@ -27,7 +27,7 @@ int main(int argc, char *argv[]) {
 
 
 //    fprintf(stderr,"before init\n");
-    InitShapes(&width, &height);            // Graphics initialization
+    init(&width, &height);            // Graphics initialization
 
 
 
@@ -58,6 +58,6 @@ int main(int argc, char *argv[]) {
 
     End();
 
-    FinishShapes();                 // Graphics cleanup
+    finish();                 // Graphics cleanup
     exit(0);
 }
